@@ -1,6 +1,6 @@
 <?php
 
-require_once('lib/trackBot.class.php');
+require_once('vendor/autoload.php');
 
 $apiKey = "";
 $apiSecret = "";

@@ -1,6 +1,5 @@
 <?php
 
-require_once('twitterbot.class.php');
 
 class trackBot extends Twitterbot {
 	public function __construct($screen_name, $apiKey, $apiSecret, $accessToken, $accessTokenSecret) {

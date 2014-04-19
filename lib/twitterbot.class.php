@@ -1,10 +1,5 @@
 <?php
 
-// Currently Composer Autoload seems to break
-//require_once("./vendor/autoload.php");
-
-//require_once("vendor/natefanaro/twitteroauth/twitteroauth/OAuth.php");
-require_once("vendor/natefanaro/twitteroauth/twitteroauth/twitteroauth.php");
 
 Class Twitterbot {
 
