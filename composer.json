@@ -3,11 +3,11 @@
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/natefanaro/twitteroauth"
+			"url": "https://github.com/stefanhayden/twitteroauth"
 		}
 	],
     	"require": {
-        	"natefanaro/twitteroauth": "dev-master"
+        	"stefanhayden/twitteroauth": "dev-master"
     	},
 	"autoload": {
 		"classmap": ["lib"]
