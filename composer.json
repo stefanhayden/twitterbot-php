@@ -8,5 +8,8 @@
 	],
     	"require": {
         	"natefanaro/twitteroauth": "dev-master"
-    	}
+    	},
+	"autoload": {
+		"classmap": ["lib"]
+	}
 }
