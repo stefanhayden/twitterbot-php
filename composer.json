@@ -1,0 +1,12 @@
+{
+	"name": "stefanhayden/twitterbots-php",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/natefanaro/twitteroauth"
+		}
+	],
+    	"require": {
+        	"natefanaro/twitteroauth": "dev-master"
+    	}
+}
