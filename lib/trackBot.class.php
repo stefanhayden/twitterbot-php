@@ -21,7 +21,7 @@ class trackBot extends Twitterbot {
 	}
 
 	public function getCurrentName() {
-		return $this->current_name = $this->tackUser->name;
+		return $this->current_name = $this->trackUser->name;
 	}
 
 	public function getPastName() {
