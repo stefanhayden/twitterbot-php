@@ -1,4 +1,4 @@
 /vendor/*
 *.swp
 composer.phar
-composer.lock
+*.swo

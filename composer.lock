@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "f12292ee8e56472f5a3f1a832e444578",
+    "packages": [
+        {
+            "name": "stefanhayden/twitteroauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stefanhayden/twitteroauth.git",
+                "reference": "e68a93fd2c6475403de171f906a3683e6adff14b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stefanhayden/twitteroauth/zipball/e68a93fd2c6475403de171f906a3683e6adff14b",
+                "reference": "e68a93fd2c6475403de171f906a3683e6adff14b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "twitteroauth/twitteroauth.php"
+                ],
+                "files": [
+                    "twitteroauth/OAuth.php"
+                ]
+            },
+            "support": {
+                "source": "https://github.com/stefanhayden/twitteroauth/tree/master"
+            },
+            "time": "2014-04-19 19:49:28"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "stefanhayden/twitteroauth": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

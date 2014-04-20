@@ -2,9 +2,17 @@
 
 
 class trackBot extends Twitterbot {
+
+	$current_name;
+	$past_name;
+
 	public function __construct($screen_name, $apiKey, $apiSecret, $accessToken, $accessTokenSecret) {
 		$this->screen_name = $screen_name;
 		parent::__construct($apiKey, $apiSecret, $accessToken, $accessTokenSecret);
+		
+		$this->user = $this->getUser($this->screen_name);
+		$this->getCurrentName();	
+		$this->getPastName();	
 	}
 
 	public function getUser($screen_name) {
@@ -12,16 +20,20 @@ class trackBot extends Twitterbot {
 		 return parent::getUser(array("screen_name" => $screen_name));
 	}
 
+	public function getCurrentName() {
+		return $this->current_name = $this->user->name;
+	}
+
+	public function getPastName() {
+		return $this->past_name = $this->user->status->text; 
+	}
+
 	public function trackName() {
 
-		$user = $this->getUser($this->screen_name);
-		$current_name = $user->name;
-		$past_name = $this->user->status->text;
-
-		if(!empty($current_name) && !empty($past_name) &&  $current_name != $past_name) {
-			$this->tweet($current_name);
+		if(!empty($this->current_name) && !empty($this->past_name) &&  $this->current_name != $this->past_name) {
+			$this->tweet($this->current_name);
 		} else {
-			$this->log('No screen_name change: '.$current_name);
+			$this->log('No screen_name change: '.$this->current_name);
 		}
 	}
 
