@@ -30,7 +30,7 @@ class trackBot extends Twitterbot {
 
 	public function trackName() {
 
-		if(!empty($this->current_name) && !empty($this->past_name) &&  $this->current_name != $this->past_name) {
+		if(!empty($this->current_name) && !empty($this->past_name) && $this->current_name != $this->past_name) {
 			$this->tweet($this->current_name);
 		} else {
 			$this->log('No screen_name change: '.$this->current_name);
