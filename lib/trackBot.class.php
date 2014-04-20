@@ -3,8 +3,8 @@
 
 class trackBot extends Twitterbot {
 
-	$current_name;
-	$past_name;
+	public $current_name;
+	public $past_name;
 
 	public function __construct($screen_name, $apiKey, $apiSecret, $accessToken, $accessTokenSecret) {
 		$this->screen_name = $screen_name;
