@@ -10,7 +10,7 @@ class trackBot extends Twitterbot {
 		$this->screen_name = $screen_name;
 		parent::__construct($apiKey, $apiSecret, $accessToken, $accessTokenSecret);
 		
-		$this->user = $this->getUser($this->screen_name);
+		$this->trackUser = $this->getUser($this->screen_name);
 		$this->getCurrentName();	
 		$this->getPastName();	
 	}
@@ -21,7 +21,7 @@ class trackBot extends Twitterbot {
 	}
 
 	public function getCurrentName() {
-		return $this->current_name = $this->user->name;
+		return $this->current_name = $this->tackUser->name;
 	}
 
 	public function getPastName() {
