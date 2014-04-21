@@ -29,7 +29,7 @@ Class Twitterbot {
 		$this->log($this->user);
 	}
 
-	private function log($value) {
+	protected function log($value) {
 		
 		if(($this->logType == "verbose" && !is_string($value)) || is_string($value)) {
 			//error_log(print_r($value, true));
