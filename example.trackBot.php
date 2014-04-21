@@ -2,6 +2,10 @@
 
 require_once('vendor/autoload.php');
 
+// Email: 
+// Login:
+// Password:
+
 $apiKey = "";
 $apiSecret = "";
 $accessToken = "";
