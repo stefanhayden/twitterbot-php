@@ -8,7 +8,7 @@ Class Twitterbot {
 	private $accessToken;
 	private $accessTokenSecret;
 	
-	public $logType = "verbose";
+	public $logType = "";
 	public $testMode = false;
 
 	public function __construct($apiKey, $apiSecret, $accessToken, $accessTokenSecret) {
